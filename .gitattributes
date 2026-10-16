@@ -1,0 +1,6 @@
+# 数据文件强制 LF：CRLF 会破坏严格的 JSONL 解析器，
+# 而 Windows 上 core.autocrlf=true 会把 LF 自动转成 CRLF。
+*.jsonl  text eol=lf
+*.csv    text eol=lf
+*.py     text eol=lf
+*.md     text eol=lf
