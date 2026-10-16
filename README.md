@@ -29,7 +29,7 @@ AI薇Steria 是一个可以直接跑起来的 AI 聊天助手：
 需要 Node.js **18.17 或更高版本**（用到内置 `fetch` 和 `AbortController`）。
 
 ```bash
-git clone https://github.com/576648958/AI-Steria.git
+git clone https://github.com/HerosisNeverdie/AI-Steria.git
 cd AI-Steria
 npm start
 ```
@@ -177,4 +177,4 @@ AI-Steria/
 
 ## License
 
-[MIT](LICENSE) © 2026 576648958
+[MIT](LICENSE) © 2026 HerosisNeverdie
