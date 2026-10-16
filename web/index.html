@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI薇Steria · AI 聊天助手</title>
+    <meta name="description" content="AI薇Steria - 轻量、零依赖的 AI 聊天助手应用" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="logo">薇</span>
+          <div class="brand-text">
+            <strong>AI薇Steria</strong>
+            <span id="status" class="status">连接中…</span>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="clear" class="btn ghost" type="button">清空对话</button>
+        </div>
+      </header>
+
+      <main id="messages" class="messages" aria-live="polite">
+        <div class="empty" id="empty">
+          <div class="empty-logo">薇</div>
+          <h1>你好，我是 AI薇Steria</h1>
+          <p>一个轻量的 AI 聊天助手。问点什么吧。</p>
+          <div class="suggestions">
+            <button class="chip" type="button">用一句话介绍你自己</button>
+            <button class="chip" type="button">帮我写一个 Python 快排</button>
+            <button class="chip" type="button">把这段话翻译成英文</button>
+          </div>
+        </div>
+      </main>
+
+      <form id="composer" class="composer">
+        <textarea
+          id="input"
+          rows="1"
+          placeholder="输入消息，Enter 发送，Shift+Enter 换行"
+          autocomplete="off"
+        ></textarea>
+        <button id="send" class="btn primary" type="submit">发送</button>
+      </form>
+      <footer class="footnote">
+        密钥保存在服务端 <code>.env</code>，不会下发到浏览器。
+      </footer>
+    </div>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

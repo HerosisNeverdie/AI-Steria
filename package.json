@@ -1,0 +1,24 @@
+{
+  "name": "ai-steria",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI薇Steria - 一个轻量的 AI 聊天助手应用，零依赖 Node.js 后端 + 原生前端。",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "ai",
+    "chatbot",
+    "assistant",
+    "nodejs",
+    "deepseek",
+    "openai-compatible"
+  ],
+  "license": "MIT"
+}
